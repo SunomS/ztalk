@@ -95,6 +95,7 @@ a {
   font-size: 16px;
   text-decoration: none !important;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 a:hover,
@@ -136,9 +137,11 @@ a:focus {
   justify-content: center;
   cursor: pointer;
   transition: 0.3s ease;
+  color: var(--white) !important;
 }
 
 .btn__primary {
+  color: var(--white);
   background: var(--primary);
   box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-light), inset -0.2rem -0.2rem 1rem var(--primary-dark), 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
   color: var(--greyLight-1);
@@ -172,6 +175,7 @@ a:focus {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  
 }
 
 .navbar-brand {
@@ -201,6 +205,7 @@ a:focus {
   padding-bottom: 4px;
   background-color: var(--white) !important;
   position: fixed;
+  box-shadow: -3px 1px 7px var(--greyLight-2)
 }
 
 @media (max-width: 768px) {
@@ -872,8 +877,8 @@ a:focus {
   color: #E1306C;
 }
 
-#about .social-icons a.yt i {
-  color: #ff0000;
+#about .social-icons a.lin i {
+  color: #0177B5;
 }
 
 #about .card-pin {
@@ -988,6 +993,7 @@ a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   position: relative;
   background-size: cover;
 }
