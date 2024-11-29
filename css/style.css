@@ -977,7 +977,6 @@ a:focus {
   border-radius: 4px;
 }
 
-/*** OPEN BOOK ***/
 .open-book {
   background: var(--white);
   box-shadow: var(--black) 0 1em 3em;
@@ -1078,7 +1077,7 @@ a:focus {
   font-family: 'proxima-nova', sans-serif;
 }
 
-.open-book article p:last-child{
+.open-book article h6{
   transform: rotate(-1deg);
 }
 
@@ -1124,8 +1123,7 @@ a:focus {
       position: relative;
       z-index: 1;
   }
-
-  /* Header/Footer */
+  
   .open-book header:before,
   .open-book header:after,
   .open-book .page-no:before,
