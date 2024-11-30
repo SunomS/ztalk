@@ -1038,6 +1038,7 @@ a:focus {
   letter-spacing: 0.125em;
   margin: 0 0 1em 0;
   padding: 24px 0;
+  font-size: 2.5rem;
   position: relative;
   text-align: center;
   text-transform: uppercase;
@@ -1207,7 +1208,7 @@ a:focus {
   }
 
   .open-book .chapter-title {
-      font-size: 3em;
+      font-size: 2em;
   }
 }
 
