@@ -1015,17 +1015,17 @@ a:focus {
 
 .open-book .page-no {
   padding-top: 1em;
-  color: var(--text-light);
+  color: var(--white);
 }
 
-.open-book .page-no #page-numbers {
+#page-numbers {
   display: none;
   list-style: none;
   padding: 0;
   text-align: left;
 }
 
-.open-book .page-no #page-numbers > li:last-child {
+#page-numbers .page-email {
   font-size: 10px;
   text-align: right;
   color: var(--text-light);
@@ -1128,7 +1128,7 @@ a:focus {
   .open-book header:after,
   .open-book .page-no:before,
   .open-book .page-no:after {
-      background: #fff;
+      background: var(--white);
       border-radius: 25%;
       content: '';
       height: 2em;
@@ -1209,6 +1209,45 @@ a:focus {
   .open-book .chapter-title {
       font-size: 3em;
   }
+}
+
+@media (max-width: 768px) {
+  .open-book {
+    box-shadow: -3px -3px 7px var(--greyLight-1), 3px 3px 5px var(--greyLight-2);
+    border-radius:8px;
+  }
+
+  .sharp-fold {
+    position: relative;
+    background: linear-gradient(-150deg, transparent 1.5em, #ffffffe2 0);
+    border-radius: .5em;
+  }
+  
+  .sharp-fold::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to left bottom, transparent 50%, rgba(255, 255, 255, 0.2) 0, rgba(255, 255, 255, 0.4)) no-repeat 100% 0;
+    width: 1.73em;
+    height: 3em;
+    transform: translateY(-1.3em) rotate(-30deg);
+    transform-origin: bottom right;
+    border-bottom-left-radius: inherit;
+    box-shadow: -.2em .2em .3em -.1em rgba(0,0,0,.15);
+  }
+
+  .open-book header h1,
+  .open-book .chapter-title,
+  .open-book article h6{
+    transform: rotate(0);
+  }
+  
+  .open-book header h6,
+  .page-no  {
+    display: none;
+  }
+  
 }
 
 
